@@ -1,0 +1,110 @@
+main{
+    .crumbs{
+        margin-bottom: 16px;
+    }
+    .all-serv{
+        .all-services{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 85px;
+            .one-serv{
+                max-width: 406px;
+                margin-bottom: 30px;
+                .photo{
+                    display: block;
+                    margin-bottom: 28px;
+                    img{
+                        border-radius: 30px;
+                    }
+                }
+                .title{
+                    margin-bottom: 8px;
+                    color: #282828;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    display: block;
+                }
+                p{
+                    margin-bottom: 16px;
+                    color: #282828;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 28px;
+                }
+                .link{
+                    display: flex;
+                    align-items: center;
+                    transition: 0.7s;
+                    max-width: 140px;
+                    h5{
+                        color: #171718;
+                        font-family: "Lato-Semibold";
+                        font-size: 18px;
+                        margin-right: 15px;
+                        transition: 0.7s;
+                    }
+                    span{
+                        width: 28px;
+                        border-radius: 50%;
+                        height: 28px;
+                        border: 2px solid #fe5000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        letter-spacing: 0px;
+                        i{
+                            transition: 0.7s;
+                            font-size: 11px;
+                            color: #000;
+                            font-weight: 700;
+                            font-family: 'fontello';
+                            &:before{
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                    &:hover{
+                        h5{
+                            color: #fe5000;
+                        }
+                        span{
+                            i{
+                                color: #fe5000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        .all-serv{
+            .headline{
+                margin-bottom: 47px;
+            }
+            .all-services{
+                .one-serv{
+                    .title{
+                        min-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1600px){
+    main{
+        .all-serv{
+            .all-services{
+                justify-content: space-between;
+            }
+        }
+    }
+}

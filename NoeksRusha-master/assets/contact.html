@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NoexRush</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"type="text/javascript"></script>
+</head>
+<body>
+
+<!-- build:section layout.header-->
+<!-- /build -->
+
+<main>
+    <ul class="scrolling">
+        <li  class=" act-li"><a href="#1"></a></li>
+        <li><a href="#2"></a></li>
+    </ul>
+    <div class="container">
+        <ul class="crumbs">
+            <li><a href="index.html">Главная </a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </div>
+   
+    <section class="all-contact" id="1">
+        <div class="container">
+            <h2 class="headline">Контакты</h2>
+            <div class="some-cont">
+                <div class="on-bl">
+                    <span>
+                        <i class="icon-pin_map"></i>
+                    </span>
+                    <div class="text">
+                        <h6>Россия, 109428,Москва, </h6>
+                        <h6>Рязанский проспект, дом 8а, стр. 1</h6>
+                    </div>
+                </div>
+                <div class="on-bl">
+                    <span>
+                        <i class="icon-phone"></i>
+                    </span>
+                    <div class="text">
+                        <a href="tel:'+7 (495) 796-31-18'">+7 (495) 796-31-18</a>
+                        <a href="tel:'+ 375 44 477-12-72'">+ 375 44 477-12-72</a>
+                    </div>
+                </div>
+                <div class="on-bl">
+                    <span>
+                        <i class="icon-mail"></i>
+                    </span>
+                    <div class="text">
+                        <a href="mailto:'sale@noex-russia.ru'">sale@noex-russia.ru</a>
+                    </div>
+                </div>
+            </div>
+            <h4>Как к нам проехать</h4>
+            <div id="map"></div>
+        </div>
+    </section>
+    <section class="forms" id="2">
+        <div class="container">
+            <h2 class="headline">Обратная связь</h2>
+            <h5 class="inf">
+                Если у Вас остались вопросы - напишите нам. 
+            </h5>
+            <h5 class="inf">
+                Наши менеджеры свяжутся с вами
+            </h5>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Почта" required>
+                <textarea placeholder="Сообщение"></textarea>
+                <div class="in-put">
+                    <div>
+                        <input type="checkbox" id="check" required>
+                        <label for="check">Нажимая кнопку, я согласен/на с условиями <a href="javascript:void(0);"  class="open-politic">политики конфиденциальности</a></p>
+                        </label>
+                    </div>
+                </div>
+                <div class="but">
+                    <button class="orange-button" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<!-- build:section layout.popUp-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.maskedinput.min.js"></script>
+<script src="../js/main.min.js"></script>
+<script src="../js/script.min.js"></script>
+</body>
+</html>

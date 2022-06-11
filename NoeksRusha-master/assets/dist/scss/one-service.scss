@@ -1,0 +1,160 @@
+.all-serv{
+    margin-bottom: 115px;
+    .main-info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .left{
+            max-width: 635px;
+            padding-top: 9px;
+            h4{
+                color: #282828;
+                font-family: "Lato-Semibold";
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 16px;
+            }
+            p{
+                color: #282828;
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 26px;
+                line-height: 26px;
+            }
+            .text{
+                margin-left: 30px;
+                margin-bottom: 37px;
+                .title{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 9px;
+                    span{
+                        width: 15px;
+                        min-width: 15px;
+                        height: 15px;
+                        border-radius: 2px;
+                        border: 2px solid #fe5000;
+                        background-color: #ffffff;
+                        margin-right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:before{
+                            content: '';
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 2px;
+                            background-color: #fe5000;
+                            display: block;
+                        }
+                    }
+                    h3{
+                        color: #fe5000;
+                        font-family: "Lato-Semibold";
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            img{
+                width: 578px;
+            }
+        }
+        .right{
+            max-width: 610px;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 578px;
+                margin-bottom: 25px;
+                order: 1;
+            }
+            p{
+                line-height: 27px;
+                color: #282828;
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 25px;
+                order: 0;
+                padding-left: 10px;
+            }
+            .text{
+                order: 2;
+                .title{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    padding-left: 9px;
+                    span{
+                        width: 15px;
+                        min-width: 15px;
+                        height: 15px;
+                        border-radius: 2px;
+                        border: 2px solid #fe5000;
+                        background-color: #ffffff;
+                        margin-right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:before{
+                            content: '';
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 2px;
+                            background-color: #fe5000;
+                            display: block;
+                        }
+                    }
+                    h3{
+                        color: #fe5000;
+                        font-family: "Lato-Semibold";
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .all-serv{
+        h2{
+            margin-bottom: 43px;
+        }
+        .main-info{
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            .left{
+                margin-right: 15px;
+                img{
+                    margin-left: 20px;
+                }
+            }
+            .right{
+                img{
+                    order: 0;
+                }
+                p{
+                    order: 1;
+                }
+                .text{
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1600px) {
+    .all-serv{
+        .main-info{
+            justify-content: space-between;
+            .left{
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.close-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 40;
+}
+
+.close-background-black{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(68,68,68, 0.9);
+    overflow-y: hidden;
+    z-index: 3000;
+    display: none;
+}
+
+.pop{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    max-width: 536px;
+    overflow: auto;
+    width: 100%;
+    box-shadow: 0 6px 22px 5px rgba(0, 0, 0, 0.05);
+    z-index: 3001;
+    transform: translate( 0, 5%);
+    i{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .all{
+        background-color: #ffffff;
+        padding: 50px 0;
+        border-radius: 20px;
+        h3{
+            color: #282828;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            input{
+                display: block;
+                width: 303px;
+                height: 35px;
+                border-radius: 3px;
+                border: 1px solid #282828;
+                max-width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+            textarea{
+                padding: 10px;
+                font-size: 14px;
+                resize: none;
+                width: 303px;
+                max-width: 100%;
+                height: 105px;
+                border-radius: 3px;
+                border: 1px solid #282828;
+                margin-bottom: 20px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                label{
+                    color: #565656;
+                    font-size: 12px;                        
+                    a{
+                        display: block;
+                        color: #565656;
+                        font-size: 12px;
+                        text-decoration: underline;
+                    }
+                }
+                input[type="checkbox"]{
+                    -webkit-appearance:none;
+                    min-width: 18px;
+                    width:18px;
+                    height:18px;
+                    min-height: 18px;
+                    border: none;
+                    border-radius: 3px;
+                    outline:none;
+                    margin-right: 14px;
+                    box-sizing:border-box;
+                    background: rgba(179,179,179, 0.5);
+                    margin-bottom: 0;
+                  }
+                  input[type="checkbox"]:checked:before{
+                    content:"";
+                    display:block;
+                    width: 4px;
+                    height: 8px;
+                    border: 0 solid  #000000;
+                    border-width:0 1px 1px 0;
+                    -webkit-transform:rotateZ(45deg);
+                    transform:rotateZ(45deg);
+                    margin: -5px -2px;
+                  }
+            }
+        }
+    }
+}
+.some-popUp {
+    max-width: 856px;
+    width: 100%;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    overflow: auto;
+    box-shadow: 0 6px 22px 5px rgba(0, 0, 0, 0.05);
+    transform: translate( 0, 5%);
+    z-index: 3005;
+    .all{
+        padding: 50px 0;
+        .some-info {
+            max-width: 765px;
+            margin: 0 auto;
+            padding: 13px 22px 0 29px;
+            height: 350px;
+            overflow-x: auto;
+            border-top: 1px solid #cccccc;
+            @media screen and (min-width: 1440px){
+                height: 450px;
+            }
+            P {
+                font-size: 18px;
+                color: #282828;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.open-p{
+    display: block !important;
+}
+
+
+@media screen and (min-width: 768px){
+    .pop{
+        transform: translate(0, 25%);
+    }
+}
